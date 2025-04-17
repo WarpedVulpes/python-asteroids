@@ -34,13 +34,8 @@ def main():
     score = 0
 
     # Set up fonts
-    try:
-        score_font = pygame.font.Font("3270-Regular.ttf", 36)
-        high_score_font = pygame.font.Font("3270-Regular.ttf", 24)
-    except FileNotFoundError:
-        print("Font file not found. Using default font.")
-        score_font = pygame.font.Font(None, 36)
-        high_score_font = pygame.font.Font(None, 24)
+    score_font = pygame.font.Font(None, 36)
+    high_score_font = pygame.font.Font(None, 24)
 
     # Define score locations
     score_location = (SCREEN_WIDTH / 2, 30)
